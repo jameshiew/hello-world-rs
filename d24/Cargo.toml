@@ -1,0 +1,13 @@
+[package]
+name = "syntax-2024"
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.89"
+publish = false
+
+[lib]
+path = "../src/main.rs"
+
+[features]
+default = ["dialect"]
+dialect = []

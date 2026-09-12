@@ -1,0 +1,22 @@
+[package]
+name = "ordinary"
+version = "0.0.0"
+edition = "2021"
+rust-version = "1.98.1"
+build = "src/main.rs"
+publish = false
+
+[workspace]
+members = ["d18", "d21", "d24"]
+resolver = "2"
+
+[dependencies]
+d18 = { package = "syntax-2018", path = "d18" }
+d21 = { package = "syntax-2021", path = "d21" }
+d24 = { package = "syntax-2024", path = "d24" }
+
+[profile.dev]
+panic = "unwind"
+
+[profile.release]
+panic = "unwind"
